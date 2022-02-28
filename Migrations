@@ -3,3 +3,8 @@ const Migrations = artifacts.require("Migrations");
 module.exports = function (deployer) {
   deployer.deploy(Migrations);
 };
+const LipToken = artifacts.require("LipToken");
+
+module.exports = function (deployer) {
+  deployer.deploy(LipToken, "LipTokens", "LIPS");
+};
